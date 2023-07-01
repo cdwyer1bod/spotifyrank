@@ -1,5 +1,12 @@
 {
   "search.exclude": {
     "**/.sst": true
+  },
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
   }
 }
