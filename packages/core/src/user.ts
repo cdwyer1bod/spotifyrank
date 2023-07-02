@@ -3,6 +3,7 @@ import { randomUUID } from "crypto";
 import { Entity, EntityItem } from "electrodb";
 import { Table } from "sst/node/table";
 import { Spotify } from "./spotify";
+import { Config } from "sst/node/config";
 
 export * as User from "./user";
 
@@ -60,6 +61,7 @@ const UserEntity = new Entity(
     table: Table.table.tableName,
   }
 );
+
 
 export type User = EntityItem<typeof UserEntity>;
 
